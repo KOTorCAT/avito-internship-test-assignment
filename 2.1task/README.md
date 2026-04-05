@@ -44,6 +44,8 @@ python3 --version
 ```bash
 git clone https://github.com/KOTorCAT/avito-internship-test-assignment/tree/main
 cd avito-internship-test-assignment
+# папка с заданием 2.1
+cd 2.1task
 ```
 
 ### 3. Создать виртуальное окружение
