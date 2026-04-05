@@ -43,7 +43,7 @@ python3 --version
 ### 2. Скачать проект
 ```bash
 git clone <ваш репозиторий>
-cd avito-test
+cd avito-internship-test-assignment
 ```
 
 ### 3. Создать виртуальное окружение
@@ -70,10 +70,10 @@ pytest -v
 # Все тесты
 pytest -v
 
-# Только позитивные (должны работать)
+# Только позитивные 
 pytest api_tests/test_positive.py -v
 
-# Только негативные (проверка ошибок)
+# Только негативные 
 pytest api_tests/test_negative.py -v
 
 # Только быстрая проверка

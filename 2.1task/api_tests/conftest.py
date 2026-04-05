@@ -27,9 +27,9 @@ def valid_ad_data(unique_seller_id: int) -> Dict[str, Any]:
         "sellerId": unique_seller_id,
         "name": f"Test Ad {random.randint(1, 10000)}",
         "price": random.randint(100, 100000),
-        "likes": 0,  
-        "viewCount": 0,  
-        "contacts": 0,  
+        "likes": 0,
+        "viewCount": 0,
+        "contacts": 0,
     }
 
 
