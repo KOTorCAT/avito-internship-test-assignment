@@ -22,7 +22,6 @@ def unique_seller_id() -> int:
 
 @pytest.fixture
 def valid_ad_data(unique_seller_id: int) -> Dict[str, Any]:
-    """Generate valid advertisement data - API requires 'likes' field at top level!"""
     return {
         "sellerId": unique_seller_id,
         "name": f"Test Ad {random.randint(1, 10000)}",
@@ -37,7 +36,6 @@ def valid_ad_data(unique_seller_id: int) -> Dict[str, Any]:
 def created_ad(
     api_client: ApiClient, valid_ad_data: Dict[str, Any]
 ) -> Tuple[str, Dict[str, Any]]:
-    """Create advertisement and return its ID and data"""
     response = api_client.create_ad(valid_ad_data)
     if response.get("error"):
         pytest.skip(f"Cannot create ad: {response.get('message')}")
@@ -48,7 +46,6 @@ def created_ad(
 
 @pytest.fixture
 def created_ads_for_seller(api_client: ApiClient, unique_seller_id: int) -> list:
-    """Create multiple ads for the same seller"""
     ads = []
     for i in range(3):
         data = {

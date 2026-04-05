@@ -42,7 +42,7 @@ python3 --version
 
 ### 2. Скачать проект
 ```bash
-git clone <ваш репозиторий>
+git clone https://github.com/KOTorCAT/avito-internship-test-assignment/tree/main
 cd avito-internship-test-assignment
 ```
 
